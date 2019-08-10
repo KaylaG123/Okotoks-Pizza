@@ -22,7 +22,7 @@ body {
 /*header start*/
 header {
   grid-area: h;
-  background-color: rgba(45, 6, 9, 0.3);
+  background-color: rgba(199, 159, 129, 0.3);
   color: #fcfae6;
   text-align: center;
   z-index: 999; }
@@ -74,7 +74,7 @@ main {
 /*footer start*/
 footer {
   grid-area: f;
-  background-color: rgba(45, 6, 9, 0.5);
+  background-color: rgba(199, 159, 129, 0.3);
   color: #fcfae6;
   padding: 0;
   margin: 0; }
@@ -182,7 +182,7 @@ h5 {
 
 .card-header {
   width: 100%;
-  background-color: #df6030;
+  background-color: rgba(199, 159, 129);
   color: #fcfae6;
   text-align: center;
   margin-top: 0; }
