@@ -1,0 +1,214 @@
+$text-color: rgb(252,250,230);
+
+
+@import 'reset';
+@import 'layout';
+@import 'menu';
+@import 'about';
+
+
+
+.card {
+    // align-items: center;
+    // justify-content: center;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+    height: inherit;
+
+    &.ratio {
+        padding-bottom: 54%;
+        background-color: #111;
+
+        > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+.card-header {
+    width: 100%;
+    background-color: rgb(223,96,48);
+    color: $text-color;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-body {
+    width: 100%;
+    background-color: rgba(45,6,9,0.9);
+    color: $text-color;
+    text-align: center;
+}
+
+/* source: https://www.labnol.org/internet/embed-responsive-google-maps/28333/ */
+.map {
+    position: relative;
+    padding-bottom: 47%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.video {
+    position: relative;
+    padding-bottom: 50%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.icon {
+    float: right;
+    height: 32px;
+    margin-left: .5em;
+    margin-right: .5em;
+
+    vertical-align: text-bottom;
+}
+
+
+
+/*media quieres*/
+
+@media (max-width: 991px){
+    header{
+        vertical-align: baseline;
+    }
+}
+
+@media (max-width: 991px){
+    .logo{
+        height: 13em;
+        margin-left: 3.5em;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar-toggler-icon{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 991px){
+    .bg-custom{
+        font-size: auto;
+    }
+}
+
+@media (max-width: 991px){
+    .btn-danger{
+        padding: .5em;
+        font-size: 1em;
+        border-radius: .5em;
+        vertical-align: bottom;
+        float: right;
+    }
+}
+
+
+@media (max-width: 991px){
+    .hours-location {
+     font-size: 1em;
+     display: none;
+    }
+}
+
+@media (max-width: 991px){
+    .desktop-phone{
+        display: none;
+    }
+}
+
+@media (min-width: 991px){
+    .btn-danger{
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+    .card{
+        margin: 1em;
+    }
+}
+@media (max-width: 991px){
+    .carousel{
+        margin: 1em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 991px){
+    .video{
+        margin: 1em;
+    }
+}
+
+@media (min-width: 991px){
+    .video{
+        margin-left: 2em;
+        margin-bottom: 2em;
+        width: 75%;
+
+    }
+}
+
+@media (max-width: 991px){
+    footer{
+        height: auto;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 991px){
+     footer ul li a{
+        padding: 10px 12px;
+    }
+}
+
+@media (min-width: 991px){
+     .footer-hours {
+        display: none;
+    }
+}
+
+@media (max-width: 991px){
+     .footer-hours {
+        padding-bottom: .5em;
+    }
+}
+
+@media (max-width: 991px){
+    body{
+        background-image: url("https://wallpapertag.com/wallpaper/full/b/b/b/324094-best-pizza-background-1920x1080.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 991px){
+    h3 {
+        color: $text-color;
+
+    }
+}

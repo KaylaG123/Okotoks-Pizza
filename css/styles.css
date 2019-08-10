@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("https://wallpapertag.com/wallpaper/full/b/b/b/324094-best-pizza-background-1920x1080.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: 'Work Sans', sans-serif;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400; }
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: 'h' 'm' 'f';
+  grid-template-rows: 216px 1fr 0fr; }
+
+/*header start*/
+header {
+  grid-area: h;
+  background-color: rgba(45, 6, 9, 0.3);
+  color: #fcfae6;
+  text-align: center;
+  z-index: 999; }
+
+.desktop-phone {
+  font-size: 2rem;
+  margin: 0;
+  display: inline-flex; }
+
+.logo {
+  margin-left: 5.5em; }
+
+.navbar {
+  text-align: left;
+  color: #fcfae6;
+  left: 0;
+  position: absolute; }
+
+.nav-link {
+  font-size: 1.5em; }
+
+.bg-custom {
+  background-color: rgba(45, 6, 9, 0.5);
+  border-color: rgba(45, 6, 9, 0.5);
+  text-transform: uppercase; }
+
+.hours-location {
+  display: inline-grid;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  background-color: inherit;
+  float: right; }
+
+/*content start*/
+main {
+  grid-area: m;
+  align-content: center;
+  background-position: center; }
+
+.carousel {
+  margin-top: 2em;
+  position: relative;
+  margin-right: 2em;
+  height: inherit; }
+  .carousel .carousel .slide {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em; }
+
+/*footer start*/
+footer {
+  grid-area: f;
+  background-color: rgba(45, 6, 9, 0.5);
+  color: #fcfae6;
+  padding: 0;
+  margin: 0; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+    footer ul li {
+      display: inline-flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 0; }
+      footer ul li a {
+        color: #fcfae6;
+        display: block;
+        padding: 14px 16px; }
+  footer p {
+    margin: 0;
+    color: #fcfae6; }
+
+.btn-link-custom {
+  color: #fcfae6;
+  font-size: .7em;
+  text-transform: uppercase; }
+
+.btn-link-custom:hover {
+  color: #2d0609; }
+
+.list-group-item {
+  color: black; }
+
+.seo {
+  color: #2d0609;
+  margin: 2em;
+  background-color: rgba(252, 250, 230, 0.3); }
+
+h3 {
+  text-align: center; }
+
+@media (max-width: 991px) {
+  .seo {
+    background-color: inherit; } }
+
+/* https://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows*/
+.carousel {
+  max-height: 500px;
+  overflow: hidden;
+  margin: 2em; }
+  .carousel .carousel-item {
+    width: inherit;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+
+article {
+  margin: 2em;
+  background-color: #2d0609;
+  color: #fcfae6;
+  text-align: center; }
+  article p {
+    background-color: #2d0609;
+    color: #fcfae6;
+    text-align: left;
+    font-size: 1.3em;
+    margin: 1em; }
+
+h5 {
+  background-color: #df6030;
+  color: #fcfae6;
+  text-align: center;
+  padding: .5em; }
+
+@media (max-width: 991px) {
+  article {
+    margin: 1em; }
+  article h5 {
+    font-size: 1em; }
+  article p {
+    font-size: .8em;
+    margin: 1em; }
+  .carousel {
+    max-height: 220px; }
+  body {
+    background-image: url("https://wallpapertag.com/wallpaper/full/b/b/b/324094-best-pizza-background-1920x1080.jpg");
+    background-position: right;
+    background-size: cover; }
+  main {
+    background-color: rgba(252, 250, 230, 0.4); } }
+
+.card {
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-top: 2em;
+  height: inherit; }
+  .card.ratio {
+    padding-bottom: 54%;
+    background-color: #111; }
+    .card.ratio > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+
+.card-header {
+  width: 100%;
+  background-color: #df6030;
+  color: #fcfae6;
+  text-align: center;
+  margin-top: 0; }
+
+.card-body {
+  width: 100%;
+  background-color: rgba(45, 6, 9, 0.9);
+  color: #fcfae6;
+  text-align: center; }
+
+/* source: https://www.labnol.org/internet/embed-responsive-google-maps/28333/ */
+.map {
+  position: relative;
+  padding-bottom: 47%;
+  height: 0;
+  overflow: hidden; }
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+.video {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden; }
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+.icon {
+  float: right;
+  height: 32px;
+  margin-left: .5em;
+  margin-right: .5em;
+  vertical-align: text-bottom; }
+
+/*media quieres*/
+@media (max-width: 991px) {
+  header {
+    vertical-align: baseline; } }
+
+@media (max-width: 991px) {
+  .logo {
+    height: 13em;
+    margin-left: 3.5em; } }
+
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    font-size: 1em; } }
+
+@media (max-width: 991px) {
+  .bg-custom {
+    font-size: auto; } }
+
+@media (max-width: 991px) {
+  .btn-danger {
+    padding: .5em;
+    font-size: 1em;
+    border-radius: .5em;
+    vertical-align: bottom;
+    float: right; } }
+
+@media (max-width: 991px) {
+  .hours-location {
+    font-size: 1em;
+    display: none; } }
+
+@media (max-width: 991px) {
+  .desktop-phone {
+    display: none; } }
+
+@media (min-width: 991px) {
+  .btn-danger {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .card {
+    margin: 1em; } }
+
+@media (max-width: 991px) {
+  .carousel {
+    margin: 1em;
+    margin-bottom: 0;
+    margin-top: 0; } }
+
+@media (max-width: 991px) {
+  .video {
+    margin: 1em; } }
+
+@media (min-width: 991px) {
+  .video {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    width: 75%; } }
+
+@media (max-width: 991px) {
+  footer {
+    height: auto;
+    font-size: .8em; } }
+
+@media (max-width: 991px) {
+  footer ul li a {
+    padding: 10px 12px; } }
+
+@media (min-width: 991px) {
+  .footer-hours {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .footer-hours {
+    padding-bottom: .5em; } }
+
+@media (max-width: 991px) {
+  body {
+    background-image: url("https://wallpapertag.com/wallpaper/full/b/b/b/324094-best-pizza-background-1920x1080.jpg");
+    background-position: center;
+    background-size: cover; } }
+
+@media (min-width: 991px) {
+  h3 {
+    color: #fcfae6; } }

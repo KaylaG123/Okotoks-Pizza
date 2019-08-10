@@ -1,0 +1,45 @@
+/* https://stackoverflow.com/questions/13391566/twitter-bootstrap-carousel-different-height-images-cause-bouncing-arrows*/
+.carousel {
+  max-height: 500px;
+  overflow: hidden;
+  margin: 2em; }
+  .carousel .carousel-item {
+    width: inherit;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 2em; }
+
+article {
+  margin: 2em;
+  background-color: #2d0609;
+  color: #fcfae6;
+  text-align: center; }
+  article p {
+    background-color: #2d0609;
+    color: #fcfae6;
+    text-align: left;
+    font-size: 1.3em;
+    margin: 1em; }
+
+h5 {
+  background-color: #df6030;
+  color: #fcfae6;
+  text-align: center;
+  padding: .5em; }
+
+@media (max-width: 991px) {
+  article {
+    margin: 1em; }
+  article h5 {
+    font-size: 1em; }
+  article p {
+    font-size: .8em;
+    margin: 1em; }
+  .carousel {
+    max-height: 220px; }
+  body {
+    background-image: url("https://wallpapertag.com/wallpaper/full/b/b/b/324094-best-pizza-background-1920x1080.jpg");
+    background-position: right;
+    background-size: cover; }
+  main {
+    background-color: rgba(252, 250, 230, 0.4); } }

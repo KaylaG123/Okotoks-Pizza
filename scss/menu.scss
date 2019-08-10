@@ -1,0 +1,32 @@
+
+$text-color: rgb(252,250,230);
+
+
+.btn-link-custom {
+    color: $text-color;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+.btn-link-custom:hover {
+    color: rgb(45,6,9);
+}
+
+.list-group-item {
+    color: black;
+}
+
+.seo {
+    color: rgb(45,6,9);
+    margin: 2em;
+    background-color: rgba(252,250,230,0.3);
+}
+
+h3 {
+    text-align: center;
+}
+
+@media (max-width: 991px){
+    .seo {
+        background-color: inherit;
+    }
+}

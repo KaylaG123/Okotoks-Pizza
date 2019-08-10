@@ -1,0 +1,22 @@
+.btn-link-custom {
+  color: #fcfae6;
+  font-size: .7em;
+  text-transform: uppercase; }
+
+.btn-link-custom:hover {
+  color: #2d0609; }
+
+.list-group-item {
+  color: black; }
+
+.seo {
+  color: #2d0609;
+  margin: 2em;
+  background-color: rgba(252, 250, 230, 0.3); }
+
+h3 {
+  text-align: center; }
+
+@media (max-width: 991px) {
+  .seo {
+    background-color: inherit; } }
